@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const container = document.getElementById("level-container");
 
   try {
-    const res = await fetch("/data/maps.json");
+    const res = await fetch("data/maps.json");
     const data = await res.json();
 
     for (const team in data) {
@@ -31,3 +31,4 @@ document.addEventListener("DOMContentLoaded", async () => {
     console.error(err);
   }
 });
+
