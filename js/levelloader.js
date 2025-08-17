@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", async () => {
               <strong>Author:</strong> ${map.author || "?"}<br>
               <strong>BPM:</strong> ${map.bpm || "?"}<br>
               <strong>Difficulty:</strong> ${map.difficulty || "?"}<br>
-              <a href="${map.download}" target="_blank" class="dl-btn" style="background-color:${map.color}">Download</a>
+              <a href="${convertGoogleDriveLink(map.download)}" target="_blank" class="dl-btn" style="background-color:${map.color}">Download</a>
 
             </p>
           `;
